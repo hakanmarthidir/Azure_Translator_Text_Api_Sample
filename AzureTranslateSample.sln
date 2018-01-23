@@ -1,31 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AzureTranslateSample", "AzureTranslateSample", "{DA1D66B7-636D-4061-94AB-8F162D8EBCF3}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_64530"
-		Debug.AspNetCompiler.PhysicalPath = "AzureTranslateSample\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64530\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_64530"
-		Release.AspNetCompiler.PhysicalPath = "AzureTranslateSample\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64530\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "64530"
-		SlnRelativePath = "AzureTranslateSample\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateStrategy", "TranslateStrategy\TranslateStrategy.csproj", "{2AA3A0BE-E6A5-4E31-B4BD-A3282C8D159B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslateStrategy", "TranslateStrategy\TranslateStrategy.csproj", "{2AA3A0BE-E6A5-4E31-B4BD-A3282C8D159B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslatorTests", "TranslatorTests\TranslatorTests.csproj", "{43FC58B8-4035-4158-9099-2B1794DB768D}"
 EndProject
@@ -35,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA1D66B7-636D-4061-94AB-8F162D8EBCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA1D66B7-636D-4061-94AB-8F162D8EBCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA1D66B7-636D-4061-94AB-8F162D8EBCF3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA1D66B7-636D-4061-94AB-8F162D8EBCF3}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{2AA3A0BE-E6A5-4E31-B4BD-A3282C8D159B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AA3A0BE-E6A5-4E31-B4BD-A3282C8D159B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AA3A0BE-E6A5-4E31-B4BD-A3282C8D159B}.Release|Any CPU.ActiveCfg = Release|Any CPU
