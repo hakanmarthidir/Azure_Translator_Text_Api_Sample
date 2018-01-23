@@ -25,8 +25,8 @@ namespace TranslatorTests
             var accessToken = string.Empty;
             Task.Run(async () =>
             {
-                var translator = new AzureTextApiTranslator();
-                accessToken = await translator.GetAuthenticationToken(key);
+                var translator = new TranslateManager(new AzureTextApiTranslator());
+                accessToken = await translator.GetToken(key);
             }).Wait();
             Debug.WriteLine("Token : " + accessToken);
             Assert.AreNotEqual(null, accessToken);
@@ -40,9 +40,9 @@ namespace TranslatorTests
             var accessToken = string.Empty;
             Task.Run(async () =>
              {
-                 var translator = new AzureTextApiTranslator();
-                 accessToken = await translator.GetAuthenticationToken(key);
-                 translateResult = await translator.TranslateText("naber", "tr", "en","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzY29wZSI6Imh0dHBzOi8vYXBpLm1pY3Jvc29mdHRyYW5zbGF0b3IuY29tLyIsInN1YnNjcmlwdGlvbi1pZCI6IjAzYjIyZjcwZjhhOTRlZWRhOTA5Y2M3MGMzNGQyMTg4IiwicHJvZHVjdC1pZCI6IlRleHRUcmFuc2xhdG9yLkYwIiwiY29nbml0aXZlLXNlcnZpY2VzLWVuZHBvaW50IjoiaHR0cHM6Ly9hcGkuY29nbml0aXZlLm1pY3Jvc29mdC5jb20vaW50ZXJuYWwvdjEuMC8iLCJhenVyZS1yZXNvdXJjZS1pZCI6Ii9zdWJzY3JpcHRpb25zLzQzZTFmNDA5LWY0ODgtNGJlOS04ZTk5LTU3NGE5NGZhZGJlOS9yZXNvdXJjZUdyb3Vwcy90cmFuc2xhdG9yTWFydC9wcm92aWRlcnMvTWljcm9zb2Z0LkNvZ25pdGl2ZVNlcnZpY2VzL2FjY291bnRzL3RyYW5zbGF0b3JNYXJ0IiwiaXNzIjoidXJuOm1zLmNvZ25pdGl2ZXNlcnZpY2VzIiwiYXVkIjoidXJuOm1zLm1pY3Jvc29mdHRyYW5zbGF0b3IiLCJleHAiOjE1MTY2NTYyNzZ9.W0MZF6BzMqxnxBHGtB-mMrlgaReSKguK1JnpA6rtKaw");
+                 var translator = new TranslateManager(new AzureTextApiTranslator());
+                 accessToken = await translator.GetToken(key);
+                 translateResult = await translator.Translate("naber", "tr", "en", accessToken);
                  Debug.WriteLine("Translate Result : " + translateResult);                 
              }).Wait();
 

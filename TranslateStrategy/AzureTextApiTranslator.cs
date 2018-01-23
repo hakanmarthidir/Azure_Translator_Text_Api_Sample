@@ -11,7 +11,7 @@ using System.Xml.Linq;
 
 namespace TranslateStrategy
 {
-    public class AzureTextApiTranslator : ITranslateStrategy, ITranslateToken
+    public class AzureTextApiTranslator : ITranslateStrategy
     {
         static string translatorEndPoint = "https://api.microsofttranslator.com/V2/Http.svc/Translate";
         static string tokenEndPoint = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken";          
